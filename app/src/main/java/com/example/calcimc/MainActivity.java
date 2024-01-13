@@ -47,19 +47,19 @@ public class MainActivity extends AppCompatActivity {
                 imc = Double.parseDouble(peso.getText().toString()) / (Double.parseDouble(altura.getText().toString()) * 2);
 
 
-                //if(imc <= 18.5){
-                    //resultadoClassificacao.setText(String.valueOf("Filezinho"));
-                //}else if(imc > 18.5 && imc <= 25){
-                   // resultadoClassificacao.setText(String.valueOf("Diliça"));
-                //} else if(imc > 25 && imc <= 30){
-                    //resultadoClassificacao.setText(String.valueOf("Ta top"));
-                //}else{
-                   // resultadoClassificacao.setText(String.valueOf("Oh la em casa"));
-                //}
+                if(imc <= 18.5){
+                    resultadoClassificacao.setText(String.valueOf("Filezinho"));
+                }else if(imc > 18.5 && imc <= 25){
+                    resultadoClassificacao.setText(String.valueOf("Diliça"));
+                } else if(imc > 25 && imc <= 30){
+                    resultadoClassificacao.setText(String.valueOf("Ta top"));
+                }else{
+                    resultadoClassificacao.setText(String.valueOf("Oh la em casa"));
+                }
                 resultadoCalculo.setText(String.valueOf(imc));
 
                 resultadoCalculo.setVisibility(View.VISIBLE);
-                //resultadoClassificacao.setVisibility(View.VISIBLE);
+                resultadoClassificacao.setVisibility(View.VISIBLE);
 
             }
         });
