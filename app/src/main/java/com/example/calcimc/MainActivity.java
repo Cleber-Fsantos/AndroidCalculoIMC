@@ -48,15 +48,17 @@ public class MainActivity extends AppCompatActivity {
 
 
                 if(imc <= 18.5){
-                    resultadoClassificacao.setText(String.valueOf("Filezinho"));
+                    resultadoClassificacao.setText(String.valueOf("Classificação: Filezinho"));
                 }else if(imc > 18.5 && imc <= 25){
-                    resultadoClassificacao.setText(String.valueOf("Diliça"));
+                    resultadoClassificacao.setText(String.valueOf("Classificação: Diliça"));
                 } else if(imc > 25 && imc <= 30){
-                    resultadoClassificacao.setText(String.valueOf("Ta top"));
+                    resultadoClassificacao.setText(String.valueOf("Classificação: Ta top"));
                 }else{
-                    resultadoClassificacao.setText(String.valueOf("Oh la em casa"));
+                    resultadoClassificacao.setText(String.valueOf("Classificação: Oh la em casa"));
                 }
-                resultadoCalculo.setText(String.valueOf(imc));
+
+
+                resultadoCalculo.setText(String.valueOf("IMC: " + imc));
 
                 resultadoCalculo.setVisibility(View.VISIBLE);
                 resultadoClassificacao.setVisibility(View.VISIBLE);
